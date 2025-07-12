@@ -31,7 +31,6 @@ This project is part of a collaborative learning effort to:
 ├── styles.css
 ├── images/
 ├── README.md
-└── .gitignore
 
 ---
 
