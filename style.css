@@ -4,7 +4,7 @@ html,
 body {
   min-height: 100vh;
   max-width: 100vw;
-  font-family: "Source Sans 3", sans-serif, "spin-cycle-ot";
+  font-family: "inter";
   box-sizing: border-box;
   overflow-x: hidden; /*Prevent horizontal scroll bar from max-width from 100vw */
   background-color: rgb(140, 161, 154);
@@ -22,10 +22,11 @@ body {
 /*NAVBAR SECTION*/
 
 nav {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   display: flex;
   gap: 100px;
   margin: 25px 50px;
+  font-family: "poppins";
 }
 
 li {
@@ -34,11 +35,12 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .right-links > ul {
   display: flex;
-  background-color: aqua;
+  /* background-color: aqua; */
   min-width: 300px;
   min-height: 100%;
   justify-content: space-around;
@@ -49,7 +51,7 @@ a {
 /* MIDDLE SECTION */
 
 .mid-section {
-  background-color: beige;
+  /* background-color: beige; */
   margin: 25px 50px;
   line-height: 55px;
   margin-top: 130px;
@@ -58,7 +60,13 @@ a {
 }
 
 .mid-section h2 {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: "Sansita Swashed";
+  font-weight: 400;
+}
+
+.gold {
+  color: bisque;
 }
 
 /*BOTTOM SECTION*/
@@ -69,6 +77,8 @@ button {
   border-radius: 10px;
   border: none;
   font-size: 20px;
+  background-color: #933c24;
+  color: white;
 }
 
 .bottom-btn {
@@ -77,4 +87,32 @@ button {
   gap: 20px;
   align-items: baseline;
   margin-top: 100px;
+}
+
+/* IMAGE COVER */
+
+.image-container {
+  position: relative; /*This will allow positioning of text overlay to be within (absolutely) */
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* This will ensure that the image does not overflow if adjusted */
+}
+
+.image-container .cover-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* This will make the text to take the width of the image */
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
 }
