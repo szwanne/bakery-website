@@ -1,0 +1,80 @@
+/* OVERALL LAYOUT */
+
+html,
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Source Sans 3", sans-serif, "spin-cycle-ot";
+  box-sizing: border-box;
+  overflow-x: hidden; /*Prevent horizontal scroll bar from max-width from 100vw */
+  background-color: rgb(140, 161, 154);
+  font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; /*This will inherit box-sizing from html/body */
+}
+
+/*NAVBAR SECTION*/
+
+nav {
+  background-color: antiquewhite;
+  display: flex;
+  gap: 100px;
+  margin: 25px 50px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.right-links > ul {
+  display: flex;
+  background-color: aqua;
+  min-width: 300px;
+  min-height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+/* MIDDLE SECTION */
+
+.mid-section {
+  background-color: beige;
+  margin: 25px 50px;
+  line-height: 55px;
+  margin-top: 130px;
+  max-width: 500px;
+  min-height: 180px;
+}
+
+.mid-section h2 {
+  font-size: 50px;
+}
+
+/*BOTTOM SECTION*/
+
+button {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.bottom-btn {
+  margin: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  margin-top: 100px;
+}
