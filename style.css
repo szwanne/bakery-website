@@ -42,18 +42,18 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.product-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
-  margin-bottom: 10px;
+.product-image {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.product-card img {
-  width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
+.product-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .product-info {
@@ -139,7 +139,9 @@ body {
 
 .top-products h2,
 .promo-content h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2rem;
   color: #333;
 }
