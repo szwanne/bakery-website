@@ -30,7 +30,7 @@ body {
 }
 
 .product-card {
-  background-image: url('card-bg.jpg');  /* Dark marble texture */
+  background-image: url('Assets/Images/image2.png');  /* Dark marble texture */
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -86,7 +86,7 @@ body {
 
 /* --- Promo Banner --- */
 .promo-banner {
-  background: url('promo-banner.jpg') no-repeat center center/cover;
+  background: url('Assets/Images/image9.png') no-repeat center center/cover;
   padding: 60px 20px;
   margin-top: 40px;
   color: #fff;
@@ -131,4 +131,15 @@ body {
 
 .learn-more-btn:hover {
   background-color: #d62828;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top-products h2,
+.promo-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333;
 }
